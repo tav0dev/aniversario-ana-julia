@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Aniversário, Ana Julia ❤️</title>
+  <meta name="description" content="Uma surpresa especial de aniversário para Ana Julia – 20 anos!" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Vimeo Player SDK -->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ===== VIDEO INTRO ===== -->
+  <div id="video-intro">
+    <!-- Start button overlay -->
+    <div id="start-overlay">
+      <div class="start-icon" id="play-btn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+      </div>
+      <p class="start-text">Toque para iniciar</p>
+      <p class="start-hint">🎬 Uma surpresa especial te espera</p>
+    </div>
+
+    <!-- Vimeo player (iframe embed) -->
+    <div id="vimeo-wrapper">
+      <iframe id="vimeo-iframe"
+        src="https://player.vimeo.com/video/1173588102?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        title="0314">
+      </iframe>
+    </div>
+
+    <!-- Skip button -->
+    <button id="skip-btn">Pular vídeo →</button>
+  </div>
+
+  <!-- ===== FLOATING HEARTS ===== -->
+  <div class="floating-hearts" id="floating-hearts"></div>
+
+  <!-- ===== PARTICLES ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== BIRTHDAY PAGE ===== -->
+  <div id="birthday-page">
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-badge">✨ 10 de Março de 2026 ✨</div>
+        <h1 class="hero-title">Feliz Aniversário</h1>
+        <div class="hero-name">Ana Julia</div>
+        <div class="hero-age">
+          <span class="age-number">20</span>
+          <span class="age-text">
+            <span>anos</span>
+            de pura luz
+          </span>
+        </div>
+        <div class="hero-divider"></div>
+        <p class="hero-subtitle">
+          Que seus 20 anos sejam apenas o começo de tudo que você merece.
+        </p>
+        <br>
+        <br>
+      </div>
+      <div class="scroll-indicator">
+        <span>Role para baixo</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Message Section -->
+    <section class="message-section" id="message">
+      <div class="message-card" data-animate>
+        <div class="heart-icon">💜</div>
+        <h2>Para Você, Meu Amor</h2>
+        <p>
+          Eu poderia escrever mil palavras e ainda assim não seria o suficiente
+          para descrever o que você significa para mim. Por mais que eu não possa passar todos os dias com você, cada
+          momento ao seu lado é um presente, e hoje eu celebro <strong>você</strong> — a pessoa mais incrível que eu já
+          conheci.
+          <br /><br />
+          Que esse novo ciclo traga tudo aquilo que seu coração deseja.
+          Eu estarei aqui, ao seu lado, em cada passo dessa jornada.
+          <br /><br />
+          <strong>Te amo infinitamente.</strong> 💕
+        </p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <h2 class="gallery-title" data-animate>Nossos Momentos</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-animate data-delay="0">
+          <img src="images/1.jpg" alt="Nosso momento especial 1">
+        </div>
+        <div class="gallery-item" data-animate data-delay="100">
+          <img src="images/2.jpg" alt="Nosso momento especial 2">
+        </div>
+        <div class="gallery-item" data-animate data-delay="200">
+          <img src="images/3.jpg" alt="Nosso momento especial 3">
+        </div>
+      </div>
+    </section>
+
+    <!-- Wishes Section -->
+    <section class="wishes-section" id="wishes">
+      <div class="wishes-content" data-animate>
+        <h2>Meus Desejos Para Você</h2>
+        <ul class="wishes-list">
+          <li>
+            <span class="emoji">🌟</span>
+            Que sua luz nunca pare de brilhar e que você inspire todos ao seu redor, assim como me inspira todos os
+            dias.
+          </li>
+          <li>
+            <span class="emoji">🌸</span>
+            Que sua felicidade seja tão grande que não caiba em palavras.
+          </li>
+          <li>
+            <span class="emoji">💜</span>
+            Que você nunca se esqueça de como é amada. Hoje, amanhã e sempre.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Última Dica Section -->
+    <section class="hint-section" id="hint">
+      <div class="hint-wrapper" data-animate>
+        <div class="hint-label">🔮 Uma última dica...</div>
+        <div class="hint-card">
+          <div class="hint-glow"></div>
+          <div class="hint-icon">🎸</div>
+          <h2 class="hint-title">Seu presente está escondido</h2>
+          <p class="hint-text">
+            Existe um lugar onde tudo se <strong>amplifica</strong>...
+          </p>
+          <div class="hint-divider"></div>
+          <p class="hint-text">
+            Onde os sentimentos ficam mais <em>intensos</em>,
+            <br>onde a vida soa mais <em>bonita</em>,
+            <br>onde cada momento ganha mais <em>volume</em>.
+          </p>
+          <div class="hint-divider"></div>
+          <p class="hint-text">
+            Porque com você, tudo é <strong>amplificado</strong>.
+            <br>O amor, a felicidade, a vida inteira.
+          </p>
+          <div class="hint-reveal">
+            <span class="hint-amp">🔊</span>
+            <p class="hint-clue">Procure onde o som nasce...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-heart">💜</div>
+      <p>Feito com todo o amor do mundo para a pessoa mais especial da minha vida.</p>
+      <p class="made-with">Ana Julia — 20 anos · 10/03/2026</p>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
